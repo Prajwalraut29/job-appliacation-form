@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="container">
+            <h1>Job Application</h1>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Kofi Kingston"> 
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="kofi@gmail.com">
+
+            <label for="job-role">Job Role</label>
+            <select name="job-role" id="job-role">
+                <option selected disabled>Choose Job Type</option>
+                <option value="front-end-developer">Front-End Developer </option>
+                <option value="back-end-developer">Back-End Developer </option>
+                <option value="mobile-developer">Mobile Developer </option>
+                <option value="fullstack-developer">Full Stack Developer </option>
+            </select>
+
+            <div class="options">
+            <label >Choose Country(ies)</label>
+            <div>
+                <label for="america">
+                    <input type="checkbox" name="countries" value="america" id="america">
+                    America
+                </label>
+                <label for="spain">
+                    <input type="checkbox" name="countries" value="spain" id="spain">
+                    Spain
+                </label>
+                <label for="india">
+                    <input type="checkbox" name="countries" value="india" id="india">
+                    India
+                </label>
+                <label for="pakistan">
+                    <input type="checkbox" name="countries" value="pakistan" id="pakistan">
+                    Pakistan
+                </label>
+            </div>
+        </div>
+
+        <div class="options">
+            <label>Gender</label>
+            <div>
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male">
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female">
+                    Female
+                </label>
+            </div>
+        </div>
+
+            <textarea name="about" id="about" cols="30" rows="3" placeholder="Information about yourself"></textarea>
+
+            <input type="submit" value="Submit Application">
+        </div>
+    </form>
+</body>
+</html>
